@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Administración de Tareas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Administración de Tareas</h1>
+
+  <div class="task-form">
+    <h2>Nueva Tarea</h2>
+    <input type="text" id="title" placeholder="Título de la tarea">
+    <textarea id="description" placeholder="Descripción de la tarea"></textarea>
+    <button onclick="createTask()">Crear Tarea</button>
+  </div>
+
+  <div class="task-list">
+    <h2>Tareas</h2>
+    <ul id="taskList"></ul>
+    <button onclick="clearTasks()">Vaciar Lista</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
